@@ -112,8 +112,8 @@ main:
     }
 
     try {
-      text = engine(file.text).replace(/\s/g, '');
-      html = file.html.replace(/\s/g, '');
+      text = engine(file.text).replace(/\s/g, '').replace(/\u200B/g, '');
+      html = file.html.replace(/\s/g, '').replace(/\u200B/g, '');
     } catch(e) {
       console.log('%s failed.', filename);
       throw e;
