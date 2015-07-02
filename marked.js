@@ -145,7 +145,6 @@ Lexer.lex = function(src, options) {
  */
 
 Lexer.prototype.lex = function(src) {
-  consoel.log('src', src)
   src = src
     .replace(/\r\n|\r/g, '\n')
     .replace(/\t/g, '    ')
@@ -690,7 +689,7 @@ InlineLexer.prototype.output = function(src) {
     // math
     if (cap = this.rules.math.exec(src)) {
       src = src.substring(cap[0].length);
-      out += this.renderer.math(escape(cap[2], true));
+      out += this.renderer.math(cap[2]);
       continue;
     }
 
