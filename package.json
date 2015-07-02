@@ -1,12 +1,12 @@
 {
-  "name": "marked",
+  "name": "@weo-edu/marked",
   "description": "A markdown parser built for speed",
   "author": "Christopher Jeffrey",
   "version": "0.3.3",
   "main": "./lib/marked.js",
   "bin": "./bin/marked",
   "man": "./man/marked.1",
-  "repository": "git://github.com/chjj/marked.git",
+  "repository": "weo-edu/marked",
   "homepage": "https://github.com/chjj/marked",
   "bugs": {
     "url": "http://github.com/chjj/marked/issues"
